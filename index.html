@@ -7,5 +7,15 @@
 </head>
 <body>
     <div id="root">Hello World!</div>
+    <div id="rootNode"></div>
+    <script>
+        
+        const heading = document.createElement('h1');
+        heading.innerHTML="HelloWorld React";
+
+        const rootNode = document.getElementById('rootNode');
+        rootNode.appendChild(heading);
+
+    </script>
 </body>
 </html>
