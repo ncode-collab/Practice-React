@@ -1,0 +1,46 @@
+###ngx-react app == creates ascafold which is already production ready.
+
+### npm is not abbrevation for node package manager. it means nothing. it just manages packages
+
+### biggest repository that manages packages
+
+### npm init == creates a package.json
+
+### npm init -y == -y skips all interactive questions and gives yes to all defaults
+
+### package.json is a configuration for npm
+### npm manages the version of those packages
+
+### most important package is bundler
+
+### bundler packages your app and ships to the production.
+
+### types of bundlers are webpack, parcel, vite
+
+### create-react-app uses webpack,babel behind the  scenes as a bundler
+
+### two types of dependencies - dev dependencies(only during development), normal dependencies(even in production)
+
+### npm install -D parcel == for installing dev dependency
+
+### what is carrot and tilde in package.json
+
+### ^2.8.3 — If a newer version is released, it will update up to (but not including) 3.0.0. For example, it can update to 2.9.15, but not 3.0.0.
+
+### ~2.8.3 — Allows only patch updates. It will update up to (but not including) 2.9.0. For example, it can go to 2.8.4, 2.8.9, etc., but not 2.9.0.
+
+### difference package.json and package-lock.json == package.json has the appoximate version while package-lock.json installs theexact version.
+
+### if i use npm install and the package.json has a version with carrot it will not install the latest version. it wil still keep the previous version since package-lock.json has that version.
+
+### but if i use npm update then it will fetch the new version, then update the hash key in package-lock.json and then install the dependency.
+
+### the integrity is hash of the package's content. before installing npm will compare the hash with the downloaded version if it doesn't match it will throw error.
+### basically integrity will ensure exact version of packages are deployed to the production.
+
+### Transitive dependencies or indirect dependencies are those dependencies that are needed by the direct dependencies.
+## these transitive dependencies information are available in package-lock.json as well as in node_modules
+### node_modules are reusable pieces of code or functionality that can be used in an application without writing anything from scratch.
+### ^ minor updates, ~ major updates. we can also have exact version.
+### whatever we can regenerate don't put it on git. it should have essential things.
+### .gitignore will block unnecessary files being pushed to git.

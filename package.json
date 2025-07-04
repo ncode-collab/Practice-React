@@ -1,0 +1,22 @@
+{
+  "name": "practice-react",
+  "version": "1.0.0",
+  "description": "React-practice",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncode-collab/Practice-React.git"
+  },
+  "author": "Nadine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncode-collab/Practice-React/issues"
+  },
+  "homepage": "https://github.com/ncode-collab/Practice-React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
